@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Unknown User" />
+
+    <Button
+        android:id="@+id/btnTambah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tambah Data"
+        android:onClick="onTambah"/>
+
+    <Button
+        android:id="@+id/btnLihat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lihat Data"
+        android:onClick="onLihat"/>
+
+    <Button
+        android:id="@+id/btnAnalisa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lihat Hasil" />
+
+    <Button
+        android:id="@+id/btnKeluar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Keluar"
+        android:onClick="onKeluar"/>
+</LinearLayout>
