@@ -4,36 +4,69 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_image"
     android:orientation="vertical"
+    android:padding="30dp"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="124dp"
+        android:layout_marginTop="60dp"
+        android:padding="20dp"
+        app:srcCompat="@drawable/logo_text" />
+
     <TextView
-        android:id="@+id/tTitle"
+        android:id="@+id/tStatus"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textStyle="italic" />
 
     <EditText
         android:id="@+id/tUsername"
+        style="@android:style/Widget.Holo.Light.EditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:layout_marginTop="10dp"
         android:hint="Username"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:textColor="@android:color/white" />
 
     <EditText
         android:id="@+id/tPassword"
+        style="@android:style/Widget.Holo.Light.EditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Password"
-        android:inputType="textPassword" />
+        android:layout_marginTop="10dp"
+        android:inputType="textPassword"
+        android:textColor="@android:color/white" />
 
     <Button
         android:id="@+id/btnMasuk"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/white"
+        android:onClick="onMasuk"
         android:text="Masuk"
-        android:onClick="onMasuk"/>
+        android:textColor="#FF9800"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:text="Copyright Ahmad rizal | 2020"
+        android:textAlignment="center"
+        android:textColor="@android:color/white" />
 
 </LinearLayout>

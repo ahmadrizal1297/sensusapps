@@ -75,6 +75,7 @@ public class AddData extends AppCompatActivity {
 
     }
     public void onKembali(View v){
-
+        it = new Intent(this, Dashboard.class);
+        startActivity(it);
     }
 }

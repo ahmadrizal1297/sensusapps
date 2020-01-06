@@ -16,11 +16,14 @@ public class Dashboard extends AppCompatActivity {
     public SharedPreferences prefs;
     public SharedPreferences.Editor edit;
     public Intent it;
+    TextView tUsername;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.dashboard);
+
+        TextView tUsername = findViewById(R.id.tUsername);
 
         prefs = getSharedPreferences("login", 0);
         String username = prefs.getString("username", null);
@@ -35,13 +38,12 @@ public class Dashboard extends AppCompatActivity {
             int level = objJSON.getInt("level");
             boolean action = objJSON.getBoolean("active");
 
-            username += "" +name+" level "+level;
+            username = "Halo, "+name+"!";
         }catch(JSONException e){
             e.printStackTrace();
         }
 
-        TextView txtViewUser = findViewById(R.id.tUsername);
-        txtViewUser.setText(username);
+        tUsername.setText("Halo, "+username+"!");
     }
 
     public void onKeluar(View v){
@@ -62,6 +64,11 @@ public class Dashboard extends AppCompatActivity {
 
     public void onLihat(View v){
         it = new Intent(this, ViewData.class);
+        startActivity(it);
+    }
+
+    public void onAnalisa(View v){
+        it = new Intent(this, Analytic.class);
         startActivity(it);
     }
 

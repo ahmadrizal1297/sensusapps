@@ -31,12 +31,13 @@ public class MainActivity extends AppCompatActivity {
 
     EditText tUsername, tPassword;
     Button btnMasuk;
-    TextView tTitle;
+    TextView tTitle, tStatus;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         db = FirebaseFirestore.getInstance();
 
@@ -56,16 +57,28 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onMasuk(View v){
-        tTitle = findViewById(R.id.tTitle);
-        tTitle.setText("Masok");
-        EditText txtUsername = findViewById(R.id.tUsername);
-        String username = txtUsername.getText().toString();
+        tStatus = findViewById(R.id.tStatus);
 
+        EditText tUsername = findViewById(R.id.tUsername);
+        EditText tPassword = findViewById(R.id.tPassword);
+
+        String username = tUsername.getText().toString();
+        String password = tPassword.getText().toString();
+
+        if(username == "admin" && password == "123"){
+
+        }else{
+            tStatus.setText("Username & password tidak cocok!"+username+password);
+        }
+
+        // WARNING BUG
         edit.putBoolean("isLogin", true);
         edit.putString("username", username);
         edit.commit();
 
         it = new Intent(this, Dashboard.class);
         startActivity(it);
+
+
     }
 }
