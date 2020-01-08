@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "324664606761",
-    "firebase_url": "https://sensusapps-a5433.firebaseio.com",
-    "project_id": "sensusapps-a5433",
-    "storage_bucket": "sensusapps-a5433.appspot.com"
+    "project_number": "209902787453",
+    "firebase_url": "https://sensusapps-11081.firebaseio.com",
+    "project_id": "sensusapps-11081",
+    "storage_bucket": "sensusapps-11081.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:324664606761:android:6c2f588b3ffb99443a5c38",
+        "mobilesdk_app_id": "1:209902787453:android:70ac808b850cb385218a14",
         "android_client_info": {
           "package_name": "com.tomeskates.sensusapps"
         }
       },
       "oauth_client": [
         {
-          "client_id": "324664606761-hlt3gcc7f7n0arnta1chgha3h00lfrpv.apps.googleusercontent.com",
+          "client_id": "209902787453-d8tkma4hk9j3igo31600ac8oncmi717t.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAbSWG1KUjgg3LuSpSad85Nys2GV9Sp_ss"
+          "current_key": "AIzaSyAY5WKJM3ryzBg5OQIfIMffbEHwbn4APWI"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "324664606761-hlt3gcc7f7n0arnta1chgha3h00lfrpv.apps.googleusercontent.com",
+              "client_id": "209902787453-d8tkma4hk9j3igo31600ac8oncmi717t.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

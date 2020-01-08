@@ -31,10 +31,10 @@
         style="@android:style/Widget.Holo.Light.EditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
         android:layout_marginTop="10dp"
-        android:hint="Username"
-        android:inputType="textPersonName"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
         android:textColor="@android:color/white" />
 
     <EditText
@@ -42,9 +42,9 @@
         style="@android:style/Widget.Holo.Light.EditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Password"
         android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Kata sandi"
         android:inputType="textPassword"
         android:textColor="@android:color/white" />
 
@@ -54,7 +54,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:background="@android:color/white"
-        android:onClick="onMasuk"
         android:text="Masuk"
         android:textColor="#FF9800"
         android:textSize="16dp"

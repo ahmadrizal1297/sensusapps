@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".AddData"></activity>
+        <activity android:name=".EditData"></activity>
         <activity android:name=".ViewData"></activity>
         <activity android:name=".Analytic"></activity>
         <activity android:name=".Dashboard"></activity>

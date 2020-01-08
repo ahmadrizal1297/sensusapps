@@ -24,7 +24,6 @@ public class Dashboard extends AppCompatActivity {
         setContentView(R.layout.dashboard);
 
         TextView tUsername = findViewById(R.id.tUsername);
-
         prefs = getSharedPreferences("login", 0);
         String username = prefs.getString("username", null);
 
@@ -32,6 +31,7 @@ public class Dashboard extends AppCompatActivity {
 
         JSONObject objJSON;
 
+        /*
         try{
             objJSON = new JSONObject((json));
             String name = objJSON.getString("name");
@@ -44,6 +44,7 @@ public class Dashboard extends AppCompatActivity {
         }
 
         tUsername.setText("Halo, "+username+"!");
+         */
     }
 
     public void onKeluar(View v){

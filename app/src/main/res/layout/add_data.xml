@@ -46,7 +46,7 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/tProvinsi"
+                android:id="@+id/tAlamat"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -112,7 +112,7 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/tJumlahKK"
+                android:id="@+id/LabelKK"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
